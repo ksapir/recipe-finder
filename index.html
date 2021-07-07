@@ -26,7 +26,7 @@
               <h3>What are you feeling for?</h3>
               <div class="row columns">
                 <label>Cuisine Type:
-                  <select name="status" type="text">
+                  <select name="cuisine" type="text">
                     <option>Any</option>
                     <option value="mexican">Mexican</option>
                     <option value="italian">Italian</option>
@@ -38,7 +38,7 @@
               </div>
               <div class="row columns">
                 <label>Recipe Type:
-                  <select name="status" type="text">
+                  <select name="recipe" type="text">
                     <option>Any</option>
                     <option value="breakfast">Breakfast</option>
                     <option value="lunch">Lunch</option>
@@ -48,7 +48,7 @@
                   </select>
                 </label>
               </div>
-              <button type="button" class="primary button expanded search-button">
+              <button type="button" class="primary button expanded search-button" id="submit">
                 Search
               </button>
            </form>
@@ -56,23 +56,51 @@
     </div>
 
     <!-- Welcome Page -->
-    <div class="hol-grail-middle" id="welcome-page">
+    <div class="hol-grail-middle translucent-form-overlay" id="welcome-page">
         <h2>Welcome!</h2>
         <h3>Choose your options to the left to get started.</h3>
     </div>
 
     <!-- Recipe Page -->
-    <!-- <div class="holy-grail-middle"> -->
-         <!-- Input Foundation Code Here -->
+    <div class="holy-grail-middle" id="recipe-page">
+         <!-- Work Feature Block Foundation code: -->
+        <div class="work-feature-block row">
+            <div class="columns medium-7">
+              <img class="work-feature-block-image" src="https://placeimg.com/300/300/any">
+            </div>
+                <div class="columns medium-5">
+                     <h2 class="work-feature-block-header">Name of Recipe</h2>
+                    <div>
+                        <p id="rTime"> Exmaple
+                        </p>
+                        <p id="rSource">Example
+                     </p>
+                        <p id="rRating">Example
+                        </p>
+                    </div>
+                        <button type="button" class="primary button search-button" id="save">
+                        Save recipe
+                        </button>
+                </div>
+        </div>
+    </div>
+      
+          
         <!-- <div>
-        <p id="rName">
+        <p id="rName">Example
         </p>
-        <p id="rTime">
+        </div>
+        <div>
+        <p id="rTime"> Exmaple
         </p>
-        <p id="rSource">
+        <p id="rSource">Example
         </p>
-        <p id="rRating">
+        <p id="rRating">Example
         </p>
+        </div>
+        <button type="button" class="primary button search-button" id="save">
+            Save recipe
+          </button>
         </div> -->
 
 
