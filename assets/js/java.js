@@ -1,4 +1,10 @@
 
+// Hides recipe page on page load -- K
+var welcomePageEl = document.getElementById("welcome-page")
+var recipePageEl = document.getElementById("recipe-page")
+recipePageEl.style.display = 'none';
+
+
 let recipeNameSave;
 let recipeURLSave;
 
@@ -44,14 +50,15 @@ $( "form" ).on( "submit", function( event ) {
 // *END* API CALL, RESPONSE, AND PROPAGATION OF RECIPE SECTION
 
 
+
 //This is from some testing I was doing, it logs user input, saves it to local storage, and then prints the saved content to a <p>
 //
 
 //TODO: lines 5-8 are commented out to avoid console errors while page is in progress
-// var subBtn = document.getElementById(`submit`); //will change once we implement a 'save' button
+var subBtn = document.getElementById(`submit`); //will change once we implement a 'save' button
 
 
-// subBtn.addEventListener(`click`, submit); //will change once we implement a 'save' button
+subBtn.addEventListener(`click`, submit); //will change once we implement a 'save' button
 
 //TODO: when the user clicks 'save', add an element to the 'saved recipes' list and populate it with the data for that recipe
 function createSavedRecipe() {
@@ -80,19 +87,22 @@ function createSavedRecipe() {
 //this changes the <p> with id=saved to the last item in local storage
 //TODO: instead of replacing the <p> content we need to add a new list element and add new content to it
 function submit () {
-    let content = document.getElementById(`text`).value;
+    // Hides welcome page, displays recipe page -- K
+    welcomePageEl.style.display = 'none'
+    recipePageEl.style.display = 'block'
+    // let content = document.getElementById(`text`).value;
     
-    console.log(`you clicked submit`);
-    console.log(content)
-    localStorage.setItem(`content`, content);
-    console.log(localStorage);
+    // console.log(`you clicked submit`);
+    // console.log(content)
+    // localStorage.setItem(`content`, content);
+    // console.log(localStorage);
     
-    let savedContent = localStorage.getItem(`content`);
-    console.log(savedContent);
+    // let savedContent = localStorage.getItem(`content`);
+    // console.log(savedContent);
 
-    let saved = document.getElementById(`saved`);
-    console.log(`saved element `+saved)
+    // let saved = document.getElementByIsaved`);
+    // console.log(`saved element `+saved)
     
-    saved.textContent = savedContent;
+    // saved.textContent = savedContent;
 }
 

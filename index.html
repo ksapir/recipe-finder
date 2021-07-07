@@ -14,31 +14,12 @@
 <body class="background">
     <div class="holy-grail-grid">
 
-    <!-- Recipe Form -->
-<!--     <div class="holy-grail-left">
-        <form>
-            <p>Choose your diet:</p>
-            <select name="tags" class="select-box">
-                <option value="gluten free">Gluten Free</option>
-                <option value="ketogenic">Ketogenic</option>
-                <option value="vegetarian">Vegetarian</option>
-                <option value="lacto-vegetarian">Lacto-Vegetarian</option>
-                <option value="ovo-vegetarian">Ovo-Vegetarian</option>
-                <option value="vegan">Vegan</option>
-                <option value="paleo">Paleo</option>
-                <option value="whole30">Whole30</option>
-            </select>
-            <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
-            <button type="submit" class="button" id="submitButton">Submit</button>
-        </form> -->
-
         <div class="holy-grail-header header">
           <h2 id="hungry">Hungry?</h2>
           <h3 id="soarewe">So are we, lets find a receipe.</h3>
         </div>
 
     <!-- Recipe Form -->
-    
     <div>
         <div class="translucent-form-overlay">
             <form>
@@ -56,33 +37,41 @@
                 <option value="whole30">Whole30</option>
             </select>
             <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
-              <button type="button" class="primary button expanded search-button">
+              <button type="button" class="primary button expanded search-button" id="submit">
                 Search
               </button>
+              </div>
            </form>
-          </div>
+        </div>
     </div>
 
     <!-- Welcome Page -->
-    <!-- <div class="hol-grail-middle" id="welcome-page">
+    <div class="hol-grail-middle translucent-form-overlay" id="welcome-page">
         <h2>Welcome!</h2>
         <h3>Choose your options to the left to get started.</h3>
-    </div> -->
+    </div>
 
     <!-- Recipe Page -->
-<div class="holy-grail-middle">
-    <img id="rImage" class="recipe-image" width="250px">
-    <p id="rName" class="recipe-title-text"></p>
-    <p id="rTime" class="recipe-title-text"></p>
-    <p id="rSource" class="recipe-title-text"></p>
-    <p id="rRating" class="recipe-title-text"></p>
-    <p id="rSummary" class="summary-text"></p>
-    <p class="hidden-label">Get ready:</p>
-    <ul id=rIngredients></ul>
-    <p class="hidden-label">Instructions:</p>
-    <p id="rInstructions"></p>
-
-</div>
+    <div class="holy-grail-middle" id="recipe-page">
+         <!-- Work Feature Block Foundation code: -->
+        <div class="work-feature-block row">
+            <div class="columns medium-7">
+                <img id="rImage" class="recipe-image" width="250px">
+                <p id="rName" class="recipe-title-text"></p>
+                <p id="rTime" class="recipe-title-text"></p>
+                <p id="rSource" class="recipe-title-text"></p>
+                <p id="rRating" class="recipe-title-text"></p>
+                <p id="rSummary" class="summary-text"></p>
+                <p class="hidden-label">Get ready:</p>
+                <ul id=rIngredients></ul>
+                <p class="hidden-label">Instructions:</p>
+                <p id="rInstructions"></p>
+                        <button type="button" class="primary button search-button" id="save">
+                        Save recipe
+                        </button>              
+            </div>
+        </div>
+    </div>
 
     <!-- Saved recipe section -->
 
