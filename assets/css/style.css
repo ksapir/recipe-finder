@@ -1,4 +1,91 @@
 
+
+
+
+/* CSS Added by Dru for API response formatting */
+
+.recipe-title-text {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+.recipe-image {
+  float: left;
+}
+
+/* Summary text */
+.summary-text {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+/* Hides the ingredients and instructions labels -- .js unhides them after API load */
+.hidden-label {
+  visibility: hidden;
+  font-weight:bold;
+}
+
+/* Positions the "What are these?" link */
+.help-text {
+  font-size: 14px;
+  font-style: italic;
+  margin: 2px 0px 10px 4px;
+}
+
+/* Allows the help text to be closer to the drop-down box */
+.select-box {
+  margin-bottom: 0px;  
+}
+
+
+/* END code for API portion */
+
+
+
+
+
+
+
+
+
+
+/* Transculent form overlay code from Foundation */
+
+.translucent-form-overlay {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+
+
+
+/* Holy Grail Layout Code from Foundation */
 .holy-grail-grid {
     display: -ms-grid;
     display: grid;
@@ -64,11 +151,3 @@
       grid-column-end: 4;
     }
   }
-  
-  .holy-grail-footer {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
-  }
-  
-  
