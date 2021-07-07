@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Recipe Finder</title>
 </head>
-<body>
+<body class="background">
     <div class="holy-grail-grid">
-        <div class="holy-grail-header">
-          <h3>Speciality Random Recipes</h3>
-        </div>
 
     <!-- Recipe Form -->
-    <div class="holy-grail-left">
+<!--     <div class="holy-grail-left">
         <form>
             <p>Choose your diet:</p>
             <select name="tags" class="select-box">
@@ -30,7 +30,37 @@
             </select>
             <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
             <button type="submit" class="button" id="submitButton">Submit</button>
-        </form>
+        </form> -->
+
+        <div class="holy-grail-header header">
+          <h2 id="hungry">Hungry?</h2>
+          <h3 id="soarewe">So are we, lets find a receipe.</h3>
+        </div>
+
+    <!-- Recipe Form -->
+    
+    <div>
+        <div class="translucent-form-overlay">
+            <form>
+              <h3>What are you feeling for?</h3>
+              <div class="row columns">
+                <label>Choose your diet:</label>
+              <select name="tags" class="select-box">
+                <option value="gluten free">Gluten Free</option>
+                <option value="ketogenic">Ketogenic</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="lacto-vegetarian">Lacto-Vegetarian</option>
+                <option value="ovo-vegetarian">Ovo-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="paleo">Paleo</option>
+                <option value="whole30">Whole30</option>
+            </select>
+            <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
+              <button type="button" class="primary button expanded search-button">
+                Search
+              </button>
+           </form>
+          </div>
     </div>
 
     <!-- Welcome Page -->
@@ -55,18 +85,16 @@
 </div>
 
     <!-- Saved recipe section -->
-    <div class="holy-grail-right">
-        <h3>Nav</h3>
-        <ul id="saved-recipes">
-        <!-- Links/buttons -->
 
+    <div class="translucent-form-overlay">
+        <h3>Saved Recipes</h3>
+        <ul id="saved-recipes">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
         </ul>
     </div>
     
-    <!-- Footer -->
-    <div class="holy-grail-footer">
-        <h3>Footer</h3>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

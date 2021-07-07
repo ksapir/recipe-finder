@@ -1,3 +1,9 @@
+.header {
+  color: white;
+  background-color: #39B65D !important;
+  text-align: center;
+}
+
 
 
 
@@ -46,6 +52,27 @@
 
 
 
+
+
+
+.background {
+  background-image: url(https://stophavingaboringlife.com/wp-content/uploads/2019/03/how-to-acquire-a-sophisticated-palate.jpeg);
+  background-size: cover;
+}
+
+
+#hungry {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 70px;
+}
+
+#soarewe {
+  font-family: 'oswald';
+}
+
+#submit {
+  width: 100%;
+}
 
 
 
