@@ -13,46 +13,36 @@
 </head>
 <body class="background">
     <div class="holy-grail-grid">
+
         <div class="holy-grail-header header">
           <h2 id="hungry">Hungry?</h2>
           <h3 id="soarewe">So are we, lets find a receipe.</h3>
         </div>
 
     <!-- Recipe Form -->
-    
     <div>
         <div class="translucent-form-overlay">
             <form>
               <h3>What are you feeling for?</h3>
               <div class="row columns">
-                <label>Cuisine Type:
-                  <select name="cuisine" type="text">
-                    <option>Any</option>
-                    <option value="mexican">Mexican</option>
-                    <option value="italian">Italian</option>
-                    <option value="chinese">Chinese</option>
-                    <option value="japanese">Japanese</option>
-                    <option value="mediterranean">Mediterranean</option>
-                  </select>
-                </label>
-              </div>
-              <div class="row columns">
-                <label>Recipe Type:
-                  <select name="recipe" type="text">
-                    <option>Any</option>
-                    <option value="breakfast">Breakfast</option>
-                    <option value="lunch">Lunch</option>
-                    <option value="salad">Salad</option>
-                    <option value="soup">Soup</option>
-                    <option value="main-course">Main Course</option>
-                  </select>
-                </label>
-              </div>
+                <label>Choose your diet:</label>
+              <select name="tags" class="select-box">
+                <option value="gluten free">Gluten Free</option>
+                <option value="ketogenic">Ketogenic</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="lacto-vegetarian">Lacto-Vegetarian</option>
+                <option value="ovo-vegetarian">Ovo-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="paleo">Paleo</option>
+                <option value="whole30">Whole30</option>
+            </select>
+            <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
               <button type="button" class="primary button expanded search-button" id="submit">
                 Search
               </button>
+              </div>
            </form>
-          </div>
+        </div>
     </div>
 
     <!-- Welcome Page -->
@@ -66,51 +56,31 @@
          <!-- Work Feature Block Foundation code: -->
         <div class="work-feature-block row">
             <div class="columns medium-7">
-              <img class="work-feature-block-image" src="https://placeimg.com/300/300/any">
-            </div>
-                <div class="columns medium-5">
-                     <h2 class="work-feature-block-header">Name of Recipe</h2>
-                    <div>
-                        <p id="rTime"> Exmaple
-                        </p>
-                        <p id="rSource">Example
-                     </p>
-                        <p id="rRating">Example
-                        </p>
-                    </div>
+                <img id="rImage" class="recipe-image" width="250px">
+                <p id="rName" class="recipe-title-text"></p>
+                <p id="rTime" class="recipe-title-text"></p>
+                <p id="rSource" class="recipe-title-text"></p>
+                <p id="rRating" class="recipe-title-text"></p>
+                <p id="rSummary" class="summary-text"></p>
+                <p class="hidden-label">Get ready:</p>
+                <ul id=rIngredients></ul>
+                <p class="hidden-label">Instructions:</p>
+                <p id="rInstructions"></p>
                         <button type="button" class="primary button search-button" id="save">
                         Save recipe
-                        </button>
-                </div>
+                        </button>              
+            </div>
         </div>
     </div>
-      
-          
-        <!-- <div>
-        <p id="rName">Example
-        </p>
-        </div>
-        <div>
-        <p id="rTime"> Exmaple
-        </p>
-        <p id="rSource">Example
-        </p>
-        <p id="rRating">Example
-        </p>
-        </div>
-        <button type="button" class="primary button search-button" id="save">
-            Save recipe
-          </button>
-        </div> -->
-
 
     <!-- Saved recipe section -->
+
     <div class="translucent-form-overlay">
         <h3>Saved Recipes</h3>
-        <ul>
+        <ul id="saved-recipes">
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 3</a></li>
         </ul>
     </div>
     
