@@ -1,4 +1,5 @@
-
+let recipeNameSave;
+let recipeURLSave;
 
 
 // API CALL, RESPONSE, AND PROPAGATION OF RECIPE SECTION
