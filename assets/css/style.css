@@ -4,6 +4,57 @@
   text-align: center;
 }
 
+
+
+
+
+/* CSS Added by Dru for API response formatting */
+
+.recipe-title-text {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+.recipe-image {
+  float: left;
+}
+
+/* Summary text */
+.summary-text {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+/* Hides the ingredients and instructions labels -- .js unhides them after API load */
+.hidden-label {
+  visibility: hidden;
+  font-weight:bold;
+}
+
+/* Positions the "What are these?" link */
+.help-text {
+  font-size: 14px;
+  font-style: italic;
+  margin: 2px 0px 10px 4px;
+}
+
+/* Allows the help text to be closer to the drop-down box */
+.select-box {
+  margin-bottom: 0px;  
+}
+
+
+/* END code for API portion */
+
+
+
+
+
+
+
+
+
+
 .background {
   background-image: url(https://stophavingaboringlife.com/wp-content/uploads/2019/03/how-to-acquire-a-sophisticated-palate.jpeg);
   background-size: cover;
@@ -22,6 +73,7 @@
 #submit {
   width: 100%;
 }
+
 
 
 /* Transculent form overlay code from Foundation */
