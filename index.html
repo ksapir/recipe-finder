@@ -16,16 +16,17 @@
 
         <div class="holy-grail-header header">
           <h2 id="hungry">Hungry?</h2>
-          <h3 id="soarewe">So are we, lets find a receipe.</h3>
+          <h3 id="soarewe">So are we, let's find a receipe.</h3>
         </div>
 
     <!-- Recipe Form -->
     <div>
         <div class="translucent-form-overlay">
-            <form>
+            
               <h3>What are you feeling for?</h3>
               <div class="row columns">
                 <label>Choose your diet:</label>
+                <form>
               <select name="tags" class="select-box">
                 <option value="gluten free">Gluten Free</option>
                 <option value="ketogenic">Ketogenic</option>
@@ -37,19 +38,24 @@
                 <option value="whole30">Whole30</option>
             </select>
             <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
-              <button type="button" class="primary button expanded search-button" id="submit">
+            <!-- Changed input/label so text is 'clickable' -->
+            <input type="checkbox" id="accept">
+            <label for="accept">Add a random cocktail</label>
+            <!-- Added "submit" type to fix API -->
+            <button type="button submit" class="primary button expanded search-button" >
                 Search
               </button>
+              </form>
               </div>
-           </form>
+          
         </div>
     </div>
 
     <!-- Welcome Page -->
-    <div class="hol-grail-middle translucent-form-overlay" id="welcome-page">
+    <!-- <div class="hol-grail-middle translucent-form-overlay" id="welcome-page">
         <h2>Welcome!</h2>
         <h3>Choose your options to the left to get started.</h3>
-    </div>
+    </div> -->
 
     <!-- Recipe Page -->
     <div class="holy-grail-middle" id="recipe-page">
@@ -66,10 +72,22 @@
                 <ul id=rIngredients></ul>
                 <p class="hidden-label">Instructions:</p>
                 <p id="rInstructions"></p>
-                        <button type="button" class="primary button search-button" id="save">
-                        Save recipe
-                        </button>              
+                <button type="button" class="primary button search-button" id="save">
+                Save recipe
+                </button>              
             </div>
+            <!-- New section for cocktail -->
+            <div class="columns medium-7">
+              <hr>
+              <p id="cName"></p>
+              <p id="cIngredients"></p>
+              <p class="hidden-label">Instructions:</p>
+              <p id="cInstructions"></p>
+
+
+
+            </div>
+            <!-- END New section for cocktail -->
         </div>
     </div>
 
