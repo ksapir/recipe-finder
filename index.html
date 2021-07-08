@@ -21,11 +21,12 @@
         </div>
 
     <!-- Recipe Form -->
-    <div class="holy-grail-left translucent-form-overlay">
-        <form>
+    <div>
+    <div class="translucent-form-overlay">
             <h3>What are you feeling for?</h3>
-            <!-- <div class="row columns"> -->
+            <div class="row columns">
                 <label>Choose your diet:</label>
+            <form>
               <select name="tags" class="select-box">
                 <option value="gluten free">Gluten Free</option>
                 <option value="ketogenic">Ketogenic</option>
@@ -37,25 +38,30 @@
                 <option value="whole30">Whole30</option>
               </select>
             <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
-              <button type="button" class="primary button expanded search-button" id="submit">
+            <!-- Changed input/label so text is 'clickable' -->
+            <input type="checkbox" id="accept">
+            <label for="accept">Add a random cocktail</label>
+            <!-- Added "submit" type to fix API -->
+            <button type="button submit" class="primary button expanded search-button" >
                 Search
-              </button>
-            <!-- </div> -->
+            </button>
         </form>
     </div>
+</div>
+</div>
 
 
     <!-- Welcome Page -->
-    <div class="holy-grail-middle translucent-form-overlay" id="welcome-page" style="max-width: 100vw;">
+    <!-- <div class="holy-grail-middle translucent-form-overlay" id="welcome-page" style="max-width: 100vw;">
         <h2>Welcome!</h2>
         <h3>Choose your options to the left to get started.</h3>
-    </div>
+    </div> -->
 
     <!-- Recipe Page -->
     <div class="holy-grail-middle" id="recipe-page" style="max-width: 100vw;">
          <!-- Work Feature Block Foundation code: -->
-        <div>
-            <div>
+        <div class="work-feature-block row">
+            <div class="columns medium-7">
                 <img id="rImage" class="recipe-image" width="250px">
                 <p id="rName" class="recipe-title-text"></p>
                 <p id="rTime" class="recipe-title-text"></p>
@@ -66,16 +72,25 @@
                 <ul id=rIngredients></ul>
                 <p class="hidden-label">Instructions:</p>
                 <p id="rInstructions"></p>
-                <div>
-                <button type="button" class="primary button search-button" id="save"> Save recipe</button>            
-                </div>  
+                <button type="button" class="primary button search-button" id="save">
+                Save recipe
+                </button>              
             </div>
+            <!-- New section for cocktail -->
+            <div class="columns medium-7">
+              <hr>
+              <p id="cName"></p>
+              <p id="cIngredients"></p>
+              <p class="hidden-label">Instructions:</p>
+              <p id="cInstructions"></p>
+            </div>
+            <!-- END New section for cocktail -->
         </div>
     </div>
 
     <!-- Saved recipe section -->
 
-    <div class="holy-grail-right translucent-form-overlay" style='height:285px'>
+    <div class="translucent-form-overlay" style='height:285px'>
         <h3>Saved Recipes</h3>
         <ul id="saved-recipes">
             <li><a href="#">Link 1</a></li>
