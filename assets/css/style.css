@@ -78,13 +78,13 @@ button{
 }
 
 #recipe-page {
-  background-color: rgba(54, 54, 54, 0.8);
+  height: 400px;
+  overflow-y:auto;
+  background-color: #EDCB5D;
+  padding: 10px; 
+  border-radius: 5px;
 }
 
-#save {
-  position: relative; 
-  bottom: 0px;
-}
 
 /* Holy Grail Layout Code from Foundation */
 .holy-grail-grid {

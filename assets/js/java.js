@@ -2,7 +2,9 @@
 // Hides recipe page on page load -- K
 var welcomePageEl = document.getElementById("welcome-page")
 var recipePageEl = document.getElementById("recipe-page")
-// recipePageEl.style.display = 'none'; <= Had to hide the "hide" temporarily -DL
+recipePageEl.style.display = 'none'; 
+
+// <= Had to hide the "hide" temporarily -DL
 
 let recipeNameSave;
 let recipeURLSave;
@@ -14,6 +16,8 @@ $( "form" ).on( "submit", function(event) {
 })
 
 function loadRecipe(){
+    welcomePageEl.style.display ='none';
+    recipePageEl.style.display = 'block'
     // Clear previous recipe data
     $("#rSummary").text("");
     $("#rIngredients").text("");
@@ -159,9 +163,6 @@ function createSavedRecipe() {
 //this changes the <p> with id=saved to the last item in local storage
 //TODO: instead of replacing the <p> content we need to add a new list element and add new content to it
 function submit () {
-    // Hides welcome page, displays recipe page -- K
-    welcomePageEl.style.display = 'none'
-    recipePageEl.style.display = 'block'
     // let content = document.getElementById(`text`).value;
     
     // console.log(`you clicked submit`);
