@@ -5,8 +5,13 @@
 }
 
 
+a {
+  color:white;
+}
 
-
+button{
+  background-color: #39B65D!important;
+}
 
 /* CSS Added by Dru for API response formatting */
 
@@ -43,14 +48,7 @@
   margin-bottom: 0px;  
 }
 
-
 /* END code for API portion */
-
-
-
-
-
-
 
 
 
@@ -80,10 +78,36 @@
 }
 
 #recipe-page {
-
+  background-color: rgba(54, 54, 54, 0.8);
 }
 
-/* Transculent form overlay code from Foundation */
+#save {
+  position: relative; 
+  bottom: 0px;
+}
+
+/* Holy Grail Layout Code from Foundation */
+.holy-grail-grid {
+    display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 8fr 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+  }
+  
+  @media screen and (max-width: 60em) {
+    .holy-grail-grid {
+          grid-template-rows: 2fr 1fr 5fr 1fr;
+    }
+  }
+  
+  .holy-grail-header {
+        grid-column-start: 1;
+    grid-column-end: 4;
+        grid-row-start: 1;
+  }
+
+  /* Transculent form overlay code from Foundation */
 .translucent-form-overlay {
   max-width: 800px;
   width: 100%;
@@ -117,84 +141,4 @@
 }
 
 
-
-/* Holy Grail Layout Code from Foundation */
-.holy-grail-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 3fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr;
-    -ms-grid-rows: 1fr 8fr 1fr;
-        grid-template-rows: 1fr 8fr 1fr;
-    grid-gap: 20px;
-    height: 100vh;
-  }
-  
-  @media screen and (max-width: 60em) {
-    .holy-grail-grid {
-      -ms-grid-rows: 2fr 1fr 5fr 1fr;
-          grid-template-rows: 2fr 1fr 5fr 1fr;
-    }
-  }
-  
-  .holy-grail-header,
-  .holy-grail-left,
-  .holy-grail-middle,
-  .holy-grail-right,
-  .holy-grail-footer {
-    padding: 1rem;
-    border: 1px solid #ededed;
-    background-color: #ededed;
-  }
-  
-  .holy-grail-header {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-  }
-  
-  @media screen and (max-width: 60em) {
-    .holy-grail-left {
-      -ms-grid-row: 2;
-          grid-row-start: 2;
-      -ms-grid-column: 1;
-          grid-column-start: 1;
-      grid-column-end: 4;
-    }
-  }
-  
-  @media screen and (max-width: 60em) {
-    .holy-grail-middle {
-      -ms-grid-row: 3;
-          grid-row-start: 3;
-      -ms-grid-column: 1;
-          grid-column-start: 1;
-      grid-column-end: 4;
-    }
-  }
-  
-  @media screen and (max-width: 60em) {
-    .right-nav {
-      -ms-grid-row: 4;
-          grid-row-start: 4;
-      -ms-grid-column: 1;
-          grid-column-start: 1;
-      grid-column-end: 4;
-    }
-  }
-
-  /* Work Feature Block Foundation code: */
-.work-feature-block {
-  padding: 10px 0;
-  border-top: 1px solid #cacaca;
-  border-bottom: 1px solid #cacaca;
-}
-
-.work-feature-block-image {
-  display: block;
-  margin: auto;
-  padding: 10px 0;
-}
 
