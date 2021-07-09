@@ -75,6 +75,8 @@ function loadCocktail(){
                     let drinkName = data.drinks[0].strDrink
                     $("#cName").append(`<strong>Paired with a(n): </strong>${drinkName}`)
                     // Display ingredients (this is messy because of the way the API returns the data)
+                       let hiddenLabelC = document.getElementsByClassName("hidden-label-c")
+            $(hiddenLabelC).css('visibility','visible')
                         let ingredient1 = data.drinks[0].strIngredient1
                         let ingredient1measure = data.drinks[0].strMeasure1
                             if (ingredient1 !== null){

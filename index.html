@@ -13,18 +13,19 @@
 </head>
 
 <body class="background">
-    <div class="holy-grail-grid">
+    <div class="grid-x">
 
-        <div class="holy-grail-header header">
+        <div class="cell header">
           <h2 id="hungry">Hungry?</h2>
-          <h3 id="soarewe">So are we, lets find a recipe.</h3>
+          <h3 id="soarewe">So are we, lets find a specialty recipe.</h3>
         </div>
+    </div> 
 
     <!-- Recipe Form -->
-    <div>
-    <div class="translucent-form-overlay">
+    <div class="grid-x grid-margin-x" style="margin-top: 15px;">
+        <div class="small-12 medium-3 large-3 cell translucent-form-overlay">
             <h3>What are you feeling for?</h3>
-            <div class="row columns">
+            <div>
                 <label>Choose your diet:</label>
             <form>
               <select name="tags" class="select-box">
@@ -37,68 +38,68 @@
                 <option value="paleo">Paleo</option>
                 <option value="whole30">Whole30</option>
               </select>
-            <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
+                <p class="help-text"><a href="https://spoonacular.com/academy/which-diet-is-best-for-me" target="_blank">What are these?</a></p>
             <!-- Changed input/label so text is 'clickable' -->
-            <input type="checkbox" id="accept">
-            <label for="accept">Add a random cocktail</label>
+                <input type="checkbox" id="accept">
+                <label for="accept">Add a random cocktail</label>
             <!-- Added "submit" type to fix API -->
-            <button type="button submit" class="primary button expanded search-button" >
+                <button type="button submit" class="primary button expanded search-button" >
                 Search
-            </button>
-        </form>
-    </div>
-</div>
-</div>
+                </button>
+            </form>
+            </div>
+        </div>
+    
+
 
 
     <!-- Welcome Page -->
-    <div class="holy-grail-middle translucent-form-overlay" id="welcome-page" style="max-width: 100vw;">
-        <h2>Welcome!</h2>
-        <h3>Choose your options to the left to get started.</h3>
-    </div>
+        <div class="small-12 medium-6 large-6 cell translucent-form-overlay" id="welcome-page">
+            <h2>Welcome!</h2>
+            <h3>Choose your options to the left to get started.</h3>
+         </div>
 
     <!-- Recipe Page -->
-    <div class="holy-grail-middle" id="recipe-page" style="max-width: 100vw;">
+        <div class="cell small-12 medium-6 large-6 " id="recipe-page">
          <!-- Work Feature Block Foundation code: -->
-        <div class="work-feature-block row">
-            <div class="columns medium-7">
-                <img id="rImage" class="recipe-image" width="250px">
-                <p id="rName" class="recipe-title-text"></p>
-                <p id="rTime" class="recipe-title-text"></p>
-                <p id="rSource" class="recipe-title-text"></p>
-                <p id="rRating" class="recipe-title-text"></p>
-                <p id="rSummary" class="summary-text"></p>
-                <p class="hidden-label">Get ready:</p>
-                <ul id=rIngredients></ul>
-                <p class="hidden-label">Instructions:</p>
-                <p id="rInstructions"></p>          
-            </div>
+            <div class="grid-x">
+                <div class="cell medium-12">
+                    <img id="rImage" class="recipe-image" width="250px">
+                    <p id="rName" class="recipe-title-text"></p>
+                    <p id="rTime" class="recipe-title-text"></p>
+                    <p id="rSource" class="recipe-title-text"></p>
+                    <p id="rRating" class="recipe-title-text"></p>
+                    <p id="rSummary" class="summary-text"></p>
+                    <p class="hidden-label">Get ready:</p>
+                    <ul id=rIngredients></ul>
+                    <p class="hidden-label">Instructions:</p>
+                    <p id="rInstructions"></p>          
+                </div>
             <!-- New section for cocktail -->
-            <div class="columns medium-7">
-              <hr>
-              <p id="cName"></p>
-              <p id="cIngredients"></p>
-              <p class="hidden-label">Instructions:</p>
-              <p id="cInstructions"></p>
-            </div>
-            <button type="button" class="primary button search-button" id="save">
-                Save recipe
-                </button>    
+                <div class="cell medium-12">
+                     <hr>
+                    <p id="cName"></p>
+                    <p id="cIngredients"></p>
+                    <p class="hidden-label-c">Instructions:</p>
+                    <p id="cInstructions"></p>
+                </div>
+                    <button type="button" class="primary button search-button" id="save">Save recipe</button>    
             <!-- END New section for cocktail -->
+            </div>
         </div>
-    </div>
 
     <!-- Saved recipe section -->
 
-    <div class="translucent-form-overlay" style='height:285px'>
-        <h3>Saved Recipes</h3>
-        <ul id="saved-recipes">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
+        <div class="cell small-12 medium-3 large-3 translucent-form-overlay" id="recipes-saved">
+            <h3>Saved Recipes</h3>
+                <ul id="saved-recipes">
+                    <li class="middle"><a href="#">Link 1</a></li>
+                    <li class="middle"><a href="#">Link 2</a></li>
+                    <li class="middle><a href="#">Link 3</a></li>
+                </ul>
+        </div>
     </div>
-    </div>
+
     
 
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
