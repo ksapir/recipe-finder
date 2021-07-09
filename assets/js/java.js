@@ -9,6 +9,7 @@ recipePageEl.style.display = 'none';
 let recipeNameSave;
 let recipeURLSave;
 
+
 // API CALL, RESPONSE, AND PROPAGATION OF RECIPE SECTION
 $( "form" ).on( "submit", function(event) {
     event.preventDefault();
@@ -17,7 +18,7 @@ $( "form" ).on( "submit", function(event) {
 
 function loadRecipe(){
     welcomePageEl.style.display ='none';
-    recipePageEl.style.display = 'block'
+    recipePageEl.style.display = 'block';
     // Clear previous recipe data
     $("#rSummary").text("");
     $("#rIngredients").text("");
