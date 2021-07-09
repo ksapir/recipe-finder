@@ -1,14 +1,20 @@
+:root {
+  --green: #39B65D;
+  --white: white;
+  --transulcent: rgba(54, 54, 54, 0.8);
+}
+
 a {
-  color:white;
+   color: var(--green);
 }
 
 button{
-  background-color: #39B65D!important;
+  background-color: var(--green)!important;
 }
 
 .header {
-  color: white;
-  background-color: #39B65D !important;
+  color: var(--white);
+  background-color: var(--green)!important;
   text-align: center;
 }
 
@@ -66,7 +72,7 @@ button{
 }
 
 #soarewe {
-  font-family: 'oswald';
+  font-family: 'Bebas Neue', cursive;
 }
 
 #submit {
@@ -74,7 +80,7 @@ button{
 }
 
 #welcome-page {
-  color: white;
+  color: var(--white);
   text-align: center;
   height: 250px;
 }
@@ -82,7 +88,8 @@ button{
 #recipe-page {
   height: 400px;
   overflow-y:auto;
-  background-color: #EDCB5D;
+  background-color: var(--transulcent);
+  color: var(--white);
   padding: 10px; 
   border-radius: 10px;
 }
@@ -90,12 +97,12 @@ button{
 /* Scrollbar styling - KP */
 #recipe-page::-webkit-scrollbar {
   width: 20px;
-  background-color: rgba(54, 54, 54, 0.8)
+  background-color: var(--transulcent);
 }
 
 /* Track */
 #recipe-page::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px white;
+  box-shadow: inset 0 0 5px var(--white);
   border-radius: 20px;
 }
 
@@ -112,7 +119,7 @@ button{
 .translucent-form-overlay {
   max-width: 800px;
   width: 100%;
-  background-color: rgba(54, 54, 54, 0.8);
+  background-color: var(--transulcent);
   padding: 20px;
   color: #fefefe;
  
@@ -142,5 +149,28 @@ button{
   color: #8a8a8a;
 }
 
+/* Media Query Styling */
+@media screen and (max-width: 39.9375em) {
+  .header{
+    background-image: url(https://b.zmtcdn.com/data/pictures/chains/0/19605830/4bbe88dcb45f7c4f0746f24829fa07fa.jpeg);
+    background-size: cover;
+    color: var(--white);
+  }
 
+  .background{
+    background-image: linear-gradient(#fdbb2d,#b21f1f,#1a2a6c)
+  }
+  .main {
+    margin: 10px;
+  }
 
+  #position{
+    display: flex;
+    flex-direction: column;
+ }
+
+  #welcome-page{
+    order: -1;
+    height: 100px;
+  }
+}
