@@ -66,6 +66,11 @@ button{
   background-size: cover;
 }
 
+.grid-margin-x{
+  margin: 0;
+  padding: 0;
+}
+
 #hungry {
   font-family: 'Pacifico', cursive !important;
   font-size: 70px;
@@ -73,6 +78,7 @@ button{
 
 #soarewe {
   font-family: 'Bebas Neue', cursive;
+  background-color: var(--transulcent)
 }
 
 #submit {
@@ -82,7 +88,7 @@ button{
 #welcome-page {
   color: var(--white);
   text-align: center;
-  height: 250px;
+  height: 400px;
 }
 
 #recipe-page {
