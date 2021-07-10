@@ -1,0 +1,182 @@
+:root {
+  --green: #39B65D;
+  --white: white;
+  --transulcent: rgba(54, 54, 54, 0.8);
+}
+
+a {
+   color: var(--green);
+}
+
+button{
+  background-color: var(--green)!important;
+}
+
+.header {
+  color: var(--white);
+  background-color: var(--green)!important;
+  text-align: center;
+}
+
+/* CSS Added by Dru for API response formatting */
+
+.recipe-title-text {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+.recipe-image {
+  float: left;
+}
+
+/* Summary text */
+.summary-text {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+/* Hides the ingredients and instructions labels -- .js unhides them after API load */
+.hidden-label {
+  visibility: hidden;
+  font-weight:bold;
+}
+
+.hidden-label-c{
+  visibility: hidden;
+  font-weight:bold;
+}
+
+/* Positions the "What are these?" link */
+.help-text {
+  font-size: 14px;
+  font-style: italic;
+  margin: 2px 0px 10px 4px;
+}
+
+/* Allows the help text to be closer to the drop-down box */
+.select-box {
+  margin-bottom: 0px;  
+}
+
+/* END code for API portion */
+
+
+.background {
+  background-image: url(https://stophavingaboringlife.com/wp-content/uploads/2019/03/how-to-acquire-a-sophisticated-palate.jpeg);
+  background-size: cover;
+}
+
+.grid-margin-x{
+  margin: 0;
+  padding: 0;
+}
+
+#hungry {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 70px;
+}
+
+#soarewe {
+  font-family: 'Bebas Neue', cursive;
+  background-color: var(--transulcent)
+}
+
+#submit {
+  width: 100%;
+}
+
+#welcome-page {
+  color: var(--white);
+  text-align: center;
+  height: 400px;
+}
+
+#recipe-page {
+  height: 400px;
+  overflow-y:auto;
+  background-color: var(--transulcent);
+  color: var(--white);
+  padding: 10px; 
+  border-radius: 10px;
+}
+
+/* Scrollbar styling - KP */
+#recipe-page::-webkit-scrollbar {
+  width: 20px;
+  background-color: var(--transulcent);
+}
+
+/* Track */
+#recipe-page::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--white);
+  border-radius: 20px;
+}
+
+/* Handle */
+#recipe-page::-webkit-scrollbar-thumb {
+  background-color: #4d805b;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+/* End Scrollbar styling */
+
+
+  /* Transculent form overlay code from Foundation */
+.translucent-form-overlay {
+  max-width: 800px;
+  width: 100%;
+  background-color: var(--transulcent);
+  padding: 20px;
+  color: #fefefe;
+ 
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+
+/* Media Query Styling */
+@media screen and (max-width: 39.9375em) {
+  .header{
+    background-image: url(https://b.zmtcdn.com/data/pictures/chains/0/19605830/4bbe88dcb45f7c4f0746f24829fa07fa.jpeg);
+    background-size: cover;
+    color: var(--white);
+  }
+
+  .background{
+    background-image: linear-gradient(#fdbb2d,#b21f1f,#1a2a6c)
+  }
+  .main {
+    margin: 10px;
+  }
+
+  #position{
+    display: flex;
+    flex-direction: column;
+ }
+
+  #welcome-page{
+    order: -1;
+    height: 100px;
+  }
+}
