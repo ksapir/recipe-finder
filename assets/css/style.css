@@ -88,11 +88,11 @@ button{
 #welcome-page {
   color: var(--white);
   text-align: center;
-  height: 400px;
+  height: 600px;
 }
 
 #recipe-page {
-  height: 400px;
+  height: 600px;
   overflow-y:auto;
   background-color: var(--transulcent);
   color: var(--white);
