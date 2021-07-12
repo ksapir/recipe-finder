@@ -88,11 +88,11 @@ button{
 #welcome-page {
   color: var(--white);
   text-align: center;
-  height: 400px;
+  height: 600px;
 }
 
 #recipe-page {
-  height: 400px;
+  height: 600px;
   overflow-y:auto;
   background-color: var(--transulcent);
   color: var(--white);
@@ -120,8 +120,27 @@ button{
 }
 /* End Scrollbar styling */
 
+/* Print functionality */
+@media print {
+body * {
+visibility: hidden;
+}
+#recipe-page, #recipe-page * {
+visibility: visible;
+}
+#recipe-page {
+position: absolute;
+left: 0;
+top: 0;
+height: auto;
+overflow-y: auto;
+}
+}
 
-  /* Transculent form overlay code from Foundation */
+/* end of Print functionality /*
+  
+
+/* Transculent form overlay code from Foundation */
 .translucent-form-overlay {
   max-width: 800px;
   width: 100%;
