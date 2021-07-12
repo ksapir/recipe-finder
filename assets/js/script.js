@@ -83,7 +83,7 @@ function loadRecipe(){
     $("#rIngredients").text("");
     $("#rInstructions").text("");
     // Takes form input and prepares it for insertion into URL
-    let tags = $( this ).serialize();
+    let tags = $("#mainForm").serialize();
     let foodFetchURL = `https://api.spoonacular.com/recipes/random?apiKey=3d1be3d4b7f847238cad30d1b21563cd&number=1&${tags}`
     fetch(foodFetchURL)
     .then(function (response) {
