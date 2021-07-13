@@ -7,7 +7,6 @@ recipePageEl.style.display = 'none';
 //variable to keep track of the number of saved recipes
 var numberSaved = 1;
 
-// <= Had to hide the "hide" temporarily -DL
 
 let recipeNameSave;
 let recipeURLSave;

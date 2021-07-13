@@ -1,15 +1,25 @@
 :root {
   --green: #39B65D;
   --white: white;
-  --transulcent: rgba(54, 54, 54, 0.8);
+  --translucent: rgba(54, 54, 54, 0.8);
 }
 
 a {
    color: var(--green);
 }
 
+a:hover {
+  color: var(--green);
+  text-shadow: 0 0 5px var(--green);
+}
+
 button{
   background-color: var(--green)!important;
+}
+
+button:hover {
+  color: var(--green);
+  text-shadow: 0 0 5px var(--white);
 }
 
 .header {
@@ -18,8 +28,72 @@ button{
   text-align: center;
 }
 
-/* CSS Added by Dru for API response formatting */
+.background {
+  background-image: url(https://stophavingaboringlife.com/wp-content/uploads/2019/03/how-to-acquire-a-sophisticated-palate.jpeg);
+  background-size: cover;
+}
 
+.grid-margin-x{
+  margin: 0;
+  padding: 0;
+}
+
+#position {
+  align-content: center;
+}
+
+#hungry {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 70px;
+}
+
+#soarewe {
+  font-family: 'Bebas Neue', cursive;
+  background-color: var(--translucent)
+}
+
+#submit {
+  width: 100%;
+}
+
+#welcome-page {
+  color: var(--white);
+  text-align: center;
+  height: 600px;
+}
+
+#recipe-page {
+  height: 600px;
+  overflow-y:auto;
+  background-color: var(--translucent);
+  color: var(--white);
+  padding: 10px; 
+  border-radius: 10px;
+}
+
+/* Scrollbar styling - KP */
+#recipe-page::-webkit-scrollbar {
+  width: 20px;
+  background-color: var(--translucent);
+}
+
+/* Track */
+#recipe-page::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--white);
+  border-radius: 20px;
+}
+
+/* Handle */
+#recipe-page::-webkit-scrollbar-thumb {
+  background-color: #4d805b;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+/* End Scrollbar styling */
+
+
+
+/* CSS Added by Dru for API response formatting */
 .recipe-title-text {
   text-align: right;
   font-weight: bold;
@@ -57,68 +131,9 @@ button{
 .select-box {
   margin-bottom: 0px;  
 }
-
 /* END code for API portion */
 
 
-.background {
-  background-image: url(https://stophavingaboringlife.com/wp-content/uploads/2019/03/how-to-acquire-a-sophisticated-palate.jpeg);
-  background-size: cover;
-}
-
-.grid-margin-x{
-  margin: 0;
-  padding: 0;
-}
-
-#hungry {
-  font-family: 'Pacifico', cursive !important;
-  font-size: 70px;
-}
-
-#soarewe {
-  font-family: 'Bebas Neue', cursive;
-  background-color: var(--transulcent)
-}
-
-#submit {
-  width: 100%;
-}
-
-#welcome-page {
-  color: var(--white);
-  text-align: center;
-  height: 600px;
-}
-
-#recipe-page {
-  height: 600px;
-  overflow-y:auto;
-  background-color: var(--transulcent);
-  color: var(--white);
-  padding: 10px; 
-  border-radius: 10px;
-}
-
-/* Scrollbar styling - KP */
-#recipe-page::-webkit-scrollbar {
-  width: 20px;
-  background-color: var(--transulcent);
-}
-
-/* Track */
-#recipe-page::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--white);
-  border-radius: 20px;
-}
-
-/* Handle */
-#recipe-page::-webkit-scrollbar-thumb {
-  background-color: #4d805b;
-  opacity: 0.5;
-  border-radius: 10px;
-}
-/* End Scrollbar styling */
 
 /* Print functionality */
 @media print {
@@ -136,7 +151,6 @@ height: auto;
 overflow-y: auto;
 }
 }
-
 /* end of Print functionality /*
   
 
@@ -144,7 +158,7 @@ overflow-y: auto;
 .translucent-form-overlay {
   max-width: 800px;
   width: 100%;
-  background-color: var(--transulcent);
+  background-color: var(--translucent);
   padding: 20px;
   color: #fefefe;
  
@@ -192,6 +206,7 @@ overflow-y: auto;
   #position{
     display: flex;
     flex-direction: column;
+    align-content: center;
  }
 
   #welcome-page{
@@ -218,6 +233,7 @@ overflow-y: auto;
   #position{
     display: flex;
     flex-direction: column;
+    align-content: center;
  }
 
   #welcome-page{
