@@ -1,4 +1,4 @@
-# Random Recipe Finder
+# Random Specialty Recipe Finder
 
 Launch App: https://ksapir.github.io/recipe-finder/
 
@@ -9,7 +9,7 @@ This recipe finder uses a pair of databases to form an extensive library of reci
 
 ## User Interface
 Practical and easy features were added to assist the user.
-- Layout (complete this)
+- Layout - easy to use, straightforward and engaging. The 
 - Save feature (complete this)
 - Print feature (complete this)
 

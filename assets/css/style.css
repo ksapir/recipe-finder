@@ -175,6 +175,32 @@ overflow-y: auto;
 }
 
 /* Media Query Styling */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .header{
+    background-image: url(https://b.zmtcdn.com/data/pictures/chains/0/19605830/4bbe88dcb45f7c4f0746f24829fa07fa.jpeg);
+    background-size: cover;
+    color: var(--white);
+  }
+
+  .background{
+    background-image: linear-gradient(#fdbb2d,#b21f1f,#1a2a6c)
+  }
+  .main {
+    margin: 10px;
+  }
+
+  #position{
+    display: flex;
+    flex-direction: column;
+ }
+
+  #welcome-page{
+    order: -1;
+    height: 200px;
+  }
+
+}
+
 @media screen and (max-width: 39.9375em) {
   .header{
     background-image: url(https://b.zmtcdn.com/data/pictures/chains/0/19605830/4bbe88dcb45f7c4f0746f24829fa07fa.jpeg);
