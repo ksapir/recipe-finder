@@ -27,6 +27,11 @@ This app retrieves data from two different APIs - one for food recipes and one f
 
 ![Recipe Finder Mobile and Tablet View](./assets/images/mobile-tablet-view.png)
 
+## Tech
+- HTML5
+- CSS
+- Javascript
+
 ## Resources
 - CSS framework: [Foundation](https://get.foundation/index.html)
 - Fonts: [Google Fonts](https://fonts.google.com/)
